@@ -26,7 +26,7 @@
     
     ` $ cd pythonUDPTCP/TCP ` 
     
-5. Alterar o código para a sintaxe do python 2:
+6. Alterar o código para a sintaxe do python 2:
 
     ` $ docker run -d -p 28670:28670 -it --rm  --name  servidortcp -v "$PWD":/var/www/servidortcp -w /var/www/servidortcp python:2 python ./TCPServer.py ` 
     
@@ -43,4 +43,4 @@
     - -v : identifica o volume onde os dados vão persistir
     - $PWD":/var/www/servidortcp : a pasta "_/www/servidortcp_" será criada na pasta "_/var_" do conteiner e toco o conteúdo da pasta local será copiado para o contêiner
     
-6. Quando o contêiner for parado, será apagado.
+7. Quando o contêiner for parado, será apagado.
